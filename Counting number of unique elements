@@ -1,0 +1,13 @@
+N=int(input())
+Arr=list(map(eval,input().split()))
+#by a iterative method
+Arr1=[]
+count=0
+for i in Arr:
+    if i not in Arr1:
+        Arr1.append(i)
+        count=count+1
+print(count,Arr1)
+#using unbuilt functions
+A=list(set(Arr))
+print(len(A),A)
